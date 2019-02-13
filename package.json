@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mj"
+    "start": "nodemon --exec babel-node index.js"
   },
   "keywords": [
     "mj"
@@ -12,6 +12,12 @@
   "author": "mj",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10" 
   }
 }
