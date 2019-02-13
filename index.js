@@ -6,4 +6,21 @@ function handleListening(){
     console.log('Listening on: http://localhost:${PORT}');
 }
 
+const betweenHome = (req, res, next) => {
+    console.log("Between");
+    next();
+}
+
+const handleHome = () => {
+    console.log("handleHome");
+}
+
+const handleProfile = () => {
+    console.log("handleProfile");
+}
+
+//app.use(betweenHome);
+
+app.get("/", betweenHome, handleHome);
+app.get("/profile", handleProfile);
 app.listen(PORT, handleListening);
