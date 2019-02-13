@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(helmet()); 
 app.use(morgan("dev"));
 
-app.use(routes.home, globalRouter);
+app.use(routes.home, globalRouter); // routes의 home변수가 호출되면 globalRouter를 호출
 app.use(routes.users, userRouter);
 app.use(routes.videos, videoRouter);
 

@@ -3,6 +3,7 @@ import routes from '../routes';
 
 const videoRouter = express.Router();
 
+videoRouter.get(routes.home, (req,res) => res.send("VideosHome"));
 videoRouter.get(routes.videos, (req,res) => res.send("Videos"));
 videoRouter.get(routes.upload, (req,res) => res.send("upload"));
 videoRouter.get(routes.videoDetail, (req,res) => res.send("videoDetail"));

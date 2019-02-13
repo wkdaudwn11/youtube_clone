@@ -25,11 +25,13 @@ const routes = {
     logout: LOGOUT,
     search: SEARCH,
 
+    usersHome: HOME,
     users: USERS,
     userDetal: USER_DETAIL,
     userProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
 
+    videosHome: HOME,
     videos: VIDEOS,
     upload: UPLOAD,
     videoDetail: VIDEO_DETAIL,
