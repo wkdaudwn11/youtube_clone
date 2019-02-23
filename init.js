@@ -1,3 +1,4 @@
+import "./db";
 import app from "./app"; // app.js 불러옴
 
 const PORT = 4000;
