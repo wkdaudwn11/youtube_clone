@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 mongoose.connect(
-    "mongodb+srv://wkdaudwn11:1q2w3e4r@cluster0-k8fxr.mongodb.net/test?retryWrites=true",
+    //"mongodb+srv://wkdaudwn11:1q2w3e4r@cluster0-k8fxr.mongodb.net/test?retryWrites=true",
+    process.env.MONGO_URL,
     {
         useNewUrlParser:true,
         useFindAndModify:false // 없어도 됨
