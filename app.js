@@ -15,6 +15,7 @@ const app = express();
 
 app.use(helmet()); //헬멧도 맨위로.. 라우츠랑 헬멧 위치 바꾼 이유는 에러가 뜨길래. (안뜨면 안바꿔도 상관없음)
 app.set("view engine", "pug");
+app.use("/uploads", express.static("uploads")); // 2019-02-23 뮬터 사용
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
