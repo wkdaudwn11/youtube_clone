@@ -6,11 +6,11 @@ const userRouter = express.Router();
 
 //userRouter.get(routes.home, (req,res) => res.send("usersHome"));
 userRouter.get(routes.users, users);
-userRouter.get(routes.userDetal, usersDetail);
+userRouter.get(routes.userDetail(), usersDetail);
 userRouter.get(routes.userProfile, editProfile);
 userRouter.get(routes.changePassword, changePassword);
 
-//userRouter.get(routes.userDetal, (req,res) => res.send("userDetal"));
+//userRouter.get(routes.userDetail, (req,res) => res.send("userDetail"));
 //userRouter.get(routes.userProfile, (req,res) => res.send("userProfile"));
 //userRouter.get(routes.changePassword, (req,res) => res.send("logout"));
 
