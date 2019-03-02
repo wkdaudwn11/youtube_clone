@@ -10,7 +10,6 @@ mongoose.connect(
         useNewUrlParser:true,
         useFindAndModify:false // 없어도 됨
     }
-
 );
 
 const db = mongoose.connection;
